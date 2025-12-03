@@ -1,173 +1,955 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Welisan Tech – Reliable Tech Solutions for Your Home & Business</title>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f5f5f5;
-        color: #222;
-    }
-    header {
-        background: #0d0d0d;
-        color: #fff;
-        padding: 40px 20px;
-        text-align: center;
-    }
-    section {
-        padding: 40px 20px;
-        max-width: 1100px;
-        margin: auto;
-    }
-    .services {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
-    }
-    .service-card {
-        background: #fff;
-        padding: 20px;
-        width: 300px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        border-radius: 10px;
-    }
-    .service-card img {
-        width: 100%;
-        border-radius: 8px;
-    }
-    .cta {
-        background: #0d0d0d;
-        color: #fff;
-        text-align: center;
-        padding: 50px 20px;
-    }
-    .cta a {
-        background: #ffcc00;
-        padding: 15px 25px;
-        display: inline-block;
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 6px;
-        text-decoration: none;
-        color: #000;
-        margin-top: 20px;
-    }
-    footer {
-        background: #111;
-        color: #eee;
-        text-align: center;
-        padding: 20px;
-        margin-top: 30px;
-    }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Welisan Technologies - CCTV, Web Design & Development, Car Trackers</title>
+  <meta name="description" content="Welisan Technologies provides professional CCTV installation, web design & development, and car tracker installation-secure, modern, and reliable solutions for homes and businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
+  <header class="header" role="banner">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Welisan Technologies home">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="brandText">
+            <strong>Welisan Technologies</strong>
+            <span>Security • Digital • Tracking</span>
+          </div>
+        </a>
 
-<!-- HERO SECTION -->
-<header>
-    <h1>Welisan Tech</h1>
-    <p style="font-size: 18px;">
-        Reliable Tech Solutions for Your Home & Business
-    </p>
-    <p>Affordable • Fast • Professional</p>
-
-    <!-- HERO IMAGE (office tech tools setup) -->
-    <!-- Image description: A clean modern workspace with a laptop, CCTV camera, and car tracking device on the table. -->
-    <img src="https://picsum.photos/1200/500?random=1" alt="Hero Image" style="width:100%; margin-top:20px; border-radius:10px;">
-</header>
-
-
-<!-- ABOUT -->
-<section>
-    <h2>Who We Are</h2>
-    <p>
-        At <strong>Welisan Tech</strong>, we provide modern and reliable technology services designed 
-        to improve security, boost online presence, and make your life easier. Whether you need 
-        a professional website, secure CCTV installation, or a trusted car tracking system, we deliver 
-        high-quality solutions at affordable prices — with fast turnaround and experienced technicians.
-    </p>
-</section>
-
-
-<!-- SERVICES -->
-<section>
-    <h2>Our Services</h2>
-
-    <div class="services">
-
-        <!-- Website Design -->
-        <div class="service-card">
-            <!-- Image description: A designer working on a modern website layout on a laptop. -->
-            <img src="https://picsum.photos/800/500?random=2" alt="Website Design">
-            <h3>Website Design, Development & Setup</h3>
-            <p>We design modern, responsive, and professional websites for businesses and personal brands.</p>
-            <p>✔ Free hosting for life included</p>
-            <p>✔ Fast delivery</p>
+        <div class="navlinks" role="navigation" aria-label="Site">
+          <a class="navA" href="#services">Services</a>
+          <a class="navA" href="#why">Why Welisan</a>
+          <a class="navA" href="#work">Work</a>
+          <a class="navA" href="#faq">FAQ</a>
+          <a class="navA" href="#contact">Contact</a>
         </div>
 
-        <!-- CCTV Installation -->
-        <div class="service-card">
-            <!-- Image description: A technician installing a CCTV camera on a wall. -->
-            <img src="https://picsum.photos/800/500?random=3" alt="CCTV Installation">
-            <h3>CCTV Installation & Repair</h3>
-            <p>Secure your home or business with high-quality CCTV cameras and expert installation.</p>
-            <p>✔ Professional setup</p>
-            <p>✔ Repair & maintenance</p>
+        <div class="actions">
+          <button class="btn secondary" type="button" id="openQuote">
+            Get a Quote
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="menuBtn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mobilePanel">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
         </div>
+      </nav>
 
-        <!-- Car Tracking -->
-        <div class="service-card">
-            <!-- Image description: A smartphone displaying a real-time car tracking map. -->
-            <img src="https://picsum.photos/800/500?random=4" alt="Car Tracking">
-            <h3>Car Tracking Installation</h3>
-            <p>Protect your vehicle with reliable real-time tracking systems installed by technicians.</p>
-            <p>✔ Anti-theft alerts</p>
-            <p>✔ Accurate real-time tracking</p>
+      <div id="mobilePanel" class="mobilePanel" aria-label="Mobile navigation">
+        <div class="row">
+          <a href="#services" class="mLink">Services</a>
+          <a href="#why" class="mLink">Why Welisan</a>
+          <a href="#work" class="mLink">Work</a>
+          <a href="#faq" class="mLink">FAQ</a>
+          <a href="#contact" class="mLink">Contact</a>
         </div>
-
+        <div class="ctaRow">
+          <button class="btn" type="button" id="openQuote2">Get a Quote</button>
+          <a class="btn ghost" href="#contact">Talk to Us</a>
+        </div>
+      </div>
     </div>
-</section>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="heroGrid">
+          <div class="heroLeft reveal">
+            <div class="pill" aria-label="Company status">
+              <span class="dot" aria-hidden="true"></span>
+              <span style="font-weight:800; font-size:12.5px; color:rgba(255,255,255,.86);">Fast installs. Clean builds. Reliable support.</span>
+              <span style="margin-left:6px; font-size:12px; color:var(--muted2);">Same-week scheduling*</span>
+            </div>
+
+            <h1>Modern security and digital solutions-installed and delivered with precision.</h1>
+            <p class="lead">
+              Welisan Technologies provides <b>CCTV installation</b>, <b>web design & development</b>, and <b>car tracker installation</b>.
+              Get a streamlined setup, tidy finishing, and solutions built to last.
+            </p>
+
+            <div class="heroCtas">
+              <button class="btn" type="button" id="scrollServices">
+                Explore Services
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M7 14l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button class="btn secondary" type="button" id="openQuote3">
+                Request Pricing
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 7h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 12h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="miniNote" aria-label="Support note">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".85"/>
+                  <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+                </svg>
+                Response within 24 - 48 hours (business days)
+              </div>
+            </div>
+          </div>
+
+          <div class="heroRight reveal">
+            <div class="glassCard">
+              <div class="overview">
+                <div class="overviewTop">
+                  <div class="badge">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="2" opacity=".9"/>
+                      <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                    </svg>
+                    Trusted Installations
+                  </div>
+                  <div class="health" title="System-ready workflows">
+                    <span class="pulse" aria-hidden="true"></span>
+                    Ready for site visit
+                  </div>
+                </div>
+
+                <div class="stats" role="list" aria-label="Highlights">
+                  <div class="stat" role="listitem">
+                    <strong><span data-count="72">0</span> hrs</strong>
+                    <span>Typical turnaround for small installs</span>
+                  </div>
+                  <div class="stat" role="listitem">
+                    <strong><span data-count="99">0</span>%</strong>
+                    <span>Client satisfaction target</span>
+                  </div>
+                  <div class="stat" role="listitem">
+                    <strong><span data-count="24">0</span>/7</strong>
+                    <span>Monitoring-ready & support options</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="serviceMini" aria-label="Quick service tiles">
+                <div class="miniCard" data-service="CCTV Installation" role="button" tabindex="0" aria-label="CCTV Installation quick quote">
+                  <div class="miniIcon" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none">
+                      <path d="M4 8h10a4 4 0 0 1 0 8H4V8Z" stroke="currentColor" stroke-width="2" opacity=".9"/>
+                      <path d="M14 12h6l-2 2v-4l2 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                      <path d="M7 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+                    </svg>
+                  </div>
+                  <h4>CCTV Installation</h4>
+                  <p>Indoor/outdoor, DVR/NVR, remote viewing.</p>
+                </div>
+
+                <div class="miniCard" data-service="Web Design & Development" role="button" tabindex="0" aria-label="Web Design and Development quick quote">
+                  <div class="miniIcon" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none">
+                      <path d="M4 5h16v14H4V5Z" stroke="currentColor" stroke-width="2" opacity=".9"/>
+                      <path d="M8 9h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+                      <path d="M8 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+                    </svg>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>Landing pages, company sites, web apps.</p>
+                </div>
+
+                <div class="miniCard" data-service="Car Tracker Installation" role="button" tabindex="0" aria-label="Car tracker installation quick quote">
+                  <div class="miniIcon" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none">
+                      <path d="M7 16l-2 1v3h3l1-2h6l1 2h3v-3l-2-1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                      <path d="M6 11l2-5h8l2 5H6Z" stroke="currentColor" stroke-width="2" opacity=".9"/>
+                      <path d="M8 11V9h8v2" stroke="currentColor" stroke-width="2" opacity=".9"/>
+                    </svg>
+                  </div>
+                  <h4>Car Trackers</h4>
+                  <p>Live location, alerts, fleet tracking setup.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panelInner">
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+                  <div>
+                    <div class="kicker">What you get</div>
+                    <h3 style="margin:8px 0 0; letter-spacing:-.02em;">A clean build-from planning to handover.</h3>
+                    <p style="margin:8px 0 0; color:var(--muted); line-height:1.55; font-size:13.5px;">
+                      Clear scope, neat cabling/workmanship, tested delivery, and a simple guide for daily use.
+                    </p>
+                  </div>
+                  <a class="btn ghost" href="#contact" style="white-space:nowrap;">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <div>
+            <div class="kicker">Services</div>
+            <h2>Everything you need to secure, grow, and track-under one roof.</h2>
+          </div>
+          <p>
+            Choose a single service or a bundled package. We focus on reliability, performance, and a professional finish.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" aria-label="CCTV Installation service">
+            <div class="cardInner">
+              <div class="cardIcon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 8h10a4 4 0 0 1 0 8H4V8Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M14 12h6l-2 2v-4l2 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>CCTV Installation</h3>
+              <p>Smart camera setups designed for visibility, coverage, and convenience-with remote access and secure storage options.</p>
+
+              <ul class="bullets">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  Indoor/outdoor cameras with clean routing & secure mounting
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  DVR/NVR setup, motion alerts, and remote viewing configuration
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  Guidance on retention, privacy, and best placement
+                </li>
+              </ul>
+
+              <div class="cardFooter">
+                <span style="color:var(--muted2); font-size:12px;">For homes & businesses</span>
+                <button class="linkBtn" type="button" data-open-quote="CCTV Installation">
+                  Get CCTV quote
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" aria-label="Web Design & Development service">
+            <div class="cardInner">
+              <div class="cardIcon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 5h16v14H4V5Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 9h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M8 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M9 19h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+                </svg>
+              </div>
+              <h3>Web Design & Development</h3>
+              <p>Fast, modern websites that look premium on mobile and desktop-built for conversion, SEO, and easy updates.</p>
+
+              <ul class="bullets">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  Business websites, landing pages, and web apps
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  Performance, accessibility, and SEO foundations
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  Forms, WhatsApp/Email integration, and hosting assistance
+                </li>
+              </ul>
+
+              <div class="cardFooter">
+                <span style="color:var(--muted2); font-size:12px;">Mobile-first build</span>
+                <button class="linkBtn" type="button" data-open-quote="Web Design & Development">
+                  Get web quote
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" aria-label="Car Tracker Installation service">
+            <div class="cardInner">
+              <div class="cardIcon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 16l-2 1v3h3l1-2h6l1 2h3v-3l-2-1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 11l2-5h8l2 5H6Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8 11V9h8v2" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>Car Tracker Installation</h3>
+              <p>Reliable tracking devices installed discreetly, configured for live tracking, alerts, and reporting for personal or fleet use.</p>
+
+              <ul class="bullets">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  Live location, geo-fence alerts, and trip history setup
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  Fleet-ready dashboards and driving behavior insights*
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".5"/>
+                  </svg>
+                  Neat wiring, testing, and handover with app login help
+                </li>
+              </ul>
+
+              <div class="cardFooter">
+                <span style="color:var(--muted2); font-size:12px;">Personal or fleet</span>
+                <button class="linkBtn" type="button" data-open-quote="Car Tracker Installation">
+                  Get tracker quote
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="divider"></div>
+      </div>
+    </section>
+
+    <!-- WHY + PROCESS -->
+    <section id="why">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <div>
+            <div class="kicker">Why Welisan</div>
+            <h2>Professional execution, transparent scope, and a smooth customer experience.</h2>
+          </div>
+          <p>
+            We prioritize clear communication, quality parts where applicable, clean workmanship, and tested handover-so you can trust what’s installed and what’s delivered.
+          </p>
+        </div>
+
+        <div class="twoCol">
+          <div class="panel reveal" aria-label="Key benefits">
+            <div class="panelInner">
+              <h3 style="margin:0; letter-spacing:-.02em;">Built to be reliable in real-world conditions.</h3>
+              <p style="margin:8px 0 0; color:var(--muted); line-height:1.55; font-size:13.5px;">
+                Whether it’s cameras, a website, or a tracker, we focus on the details that impact daily use: placement, performance, stability, and support.
+              </p>
+
+              <div class="featureGrid" role="list" aria-label="Benefits">
+                <div class="feature" role="listitem">
+                  <div class="ficon" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".75"/>
+                      <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Fast & scheduled</h4>
+                    <p>Clear timelines, realistic scope, and predictable delivery.</p>
+                  </div>
+                </div>
+
+                <div class="feature" role="listitem">
+                  <div class="ficon" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none">
+                      <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".75"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Quality checks</h4>
+                    <p>Testing, configuration, and handover guidance.</p>
+                  </div>
+                </div>
+
+                <div class="feature" role="listitem">
+                  <div class="ficon" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Security-minded</h4>
+                    <p>Privacy-first setup, password hygiene, secure access.</p>
+                  </div>
+                </div>
+
+                <div class="feature" role="listitem">
+                  <div class="ficon" aria-hidden="true">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none">
+                      <path d="M4 7h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4>Clear documentation</h4>
+                    <p>Simple instructions and optional maintenance plans.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel reveal" aria-label="Work process">
+            <div class="panelInner">
+              <h3 style="margin:0; letter-spacing:-.02em;">A simple, proven process.</h3>
+              <p style="margin:8px 0 0; color:var(--muted); line-height:1.55; font-size:13.5px;">
+                We keep it straightforward-so you always know what’s next.
+              </p>
+
+              <div class="steps" role="list" aria-label="Steps">
+                <div class="step" role="listitem">
+                  <div class="num" aria-hidden="true">1</div>
+                  <div>
+                    <b>Discovery & site details</b>
+                    <span>We confirm requirements, location, and constraints.</span>
+                  </div>
+                </div>
+                <div class="step" role="listitem">
+                  <div class="num" aria-hidden="true">2</div>
+                  <div>
+                    <b>Quote & timeline</b>
+                    <span>Transparent pricing with clear deliverables and schedule.</span>
+                  </div>
+                </div>
+                <div class="step" role="listitem">
+                  <div class="num" aria-hidden="true">3</div>
+                  <div>
+                    <b>Install/build & configure</b>
+                    <span>Neat setup, testing, optimization, and security checks.</span>
+                  </div>
+                </div>
+                <div class="step" role="listitem">
+                  <div class="num" aria-hidden="true">4</div>
+                  <div>
+                    <b>Handover & support</b>
+                    <span>Walkthrough, admin access, and after-care options.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px;">
+                <button class="btn" type="button" data-open-quote="General Inquiry">Start a Project</button>
+                <a class="btn secondary" href="#contact">Ask a Question</a>
+              </div>
+              <p style="margin:10px 0 0; color:var(--muted2); font-size:12px; line-height:1.55;">
+                *Features and timelines depend on location, hardware/software availability, and project scope.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <div>
+            <div class="kicker">Selected Work</div>
+            <h2>Examples of what we deliver.</h2>
+          </div>
+          <p>These are sample project types we commonly deliver. Click any tile to prefill a quote with that project type.</p>
+        </div>
+
+        <div class="portfolio" role="list" aria-label="Portfolio">
+          <div class="work reveal" role="listitem" tabindex="0" data-service="CCTV Installation" data-prefill="8-camera CCTV with remote viewing">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="meta">
+              <h4>8-Camera Business CCTV Setup</h4>
+              <p>Coverage planning, NVR setup, motion alerts, and remote access handover.</p>
+              <div class="tags" aria-label="Tags">
+                <span class="tag">Placement plan</span>
+                <span class="tag">NVR</span>
+                <span class="tag">Remote viewing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="work reveal" role="listitem" tabindex="0" data-service="Web Design & Development" data-prefill="Modern company website with contact & WhatsApp">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="meta">
+              <h4>Modern Company Website</h4>
+              <p>Mobile-first design, fast load, SEO basics, and lead capture forms.</p>
+              <div class="tags" aria-label="Tags">
+                <span class="tag">Responsive</span>
+                <span class="tag">SEO-ready</span>
+                <span class="tag">Lead forms</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="work reveal" role="listitem" tabindex="0" data-service="Car Tracker Installation" data-prefill="Fleet tracker installs + driver alerts">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="meta">
+              <h4>Fleet Tracking Setup</h4>
+              <p>Discreet installs, platform configuration, and alerts for operations teams.</p>
+              <div class="tags" aria-label="Tags">
+                <span class="tag">Geo-fence</span>
+                <span class="tag">Reports</span>
+                <span class="tag">Multi-vehicle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section aria-label="Testimonials">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <div>
+            <div class="kicker">Clients</div>
+            <h2>Trusted for quality work and clear communication.</h2>
+          </div>
+        </div>
+
+        <div class="testWrap">
+          <div class="quoteCard reveal" aria-label="Testimonial carousel">
+            <div class="quoteInner">
+              <div class="kicker">What people say</div>
+              <div id="quoteText" class="quote">“The CCTV installation was neat and professional. Remote viewing was set up perfectly and explained clearly.”</div>
+              <div class="person">
+                <div class="who">
+                  <div class="avatar" aria-hidden="true"></div>
+                  <div>
+                    <b id="quoteName">Operations Manager</b>
+                    <span id="quoteRole">Retail Store</span>
+                  </div>
+                </div>
+                <div class="quoteNav" aria-label="Testimonial navigation">
+                  <button class="qBtn" type="button" id="prevQuote" aria-label="Previous testimonial">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <button class="qBtn" type="button" id="nextQuote" aria-label="Next testimonial">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trustCard reveal" aria-label="Trust points">
+            <div class="trustInner">
+              <div class="kicker">Our commitment</div>
+              <h3 style="margin:8px 0 0; letter-spacing:-.02em;">A dependable partner for long-term results.</h3>
+              <ul class="trustList">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Secure configurations and careful account handover.
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 7h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+                    <path d="M4 17h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+                  </svg>
+                  Straightforward scope with no confusion in deliverables.
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".65"/>
+                  </svg>
+                  Timely updates and support options after delivery.
+                </li>
+              </ul>
+
+              <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px;">
+                <button class="btn" type="button" data-open-quote="Bundle Package">Ask about bundles</button>
+                <a class="btn secondary" href="#contact">Contact now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <div>
+            <div class="kicker">FAQ</div>
+            <h2>Quick answers before you book.</h2>
+          </div>
+          <p>Have specific requirements? Send them in the quote request and we’ll advise the best approach.</p>
+        </div>
+
+        <div class="faqGrid">
+          <details class="faq reveal">
+            <summary>
+              How do you determine CCTV camera placement?
+              <span class="chev" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="ans">
+              We consider entry points, blind spots, lighting conditions, distance to subjects, and the most valuable angles for identification. We also plan power/network routing to keep the installation neat and reliable.
+            </div>
+          </details>
+
+          <details class="faq reveal">
+            <summary>
+              Can you build a website that works well on mobile?
+              <span class="chev" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="ans">
+              Yes-our builds are mobile-first, optimized for speed, clear typography, and easy navigation. We can also integrate contact forms, WhatsApp/email, and basic SEO structure.
+            </div>
+          </details>
+
+          <details class="faq reveal">
+            <summary>
+              Do car trackers drain the battery?
+              <span class="chev" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="ans">
+              When installed correctly, trackers are designed for low power consumption. We test the setup, wiring, and reporting to ensure stable operation and advise best practices if a vehicle is parked long-term.
+            </div>
+          </details>
+
+          <details class="faq reveal">
+            <summary>
+              What information do you need for a quote?
+              <span class="chev" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="ans">
+              Service type, location, number of cameras/vehicles (if applicable), and any preferences (e.g., remote viewing, storage retention, pages required for a website). If unsure, we’ll guide you.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact Welisan Technologies">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <div>
+            <div class="kicker">Contact</div>
+            <h2>Tell us what you need. We’ll respond with next steps.</h2>
+          </div>
+          <p>Use the form below to request a quote or ask a question.</p>
+        </div>
+
+        <div class="contactGrid">
+          <div class="contactCard reveal">
+            <div class="contactInner">
+              <h3 style="margin:0; letter-spacing:-.02em;">Reach Welisan Technologies</h3>
+
+                  <ul class="contactList">
+                      <a href="https://wa.me/254111966638" target="_blank">
+                        <li>
+                          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 5 12.8 19.8 19.8 0 0 1 1.9 4.2 2 2 0 0 1 3.9 2h3a2 2 0 0 1 2 1.7c.1.8.3 1.6.6 2.4a2 2 0 0 1-.5 2.1L8.1 9.1a16 16 0 0 0 6.8 6.8l.9-1a2 2 0 0 1 2.1-.5c.8.3 1.6.5 2.4.6a2 2 0 0 1 1.7 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                          </svg>
+                          <div>
+                            <b>Phone</b>
+                              <span>+254 111 966 638</span>
+                            
+                          </div>
+                        </li>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@weilsan.site" target="_blank">
+                        <li>
+                          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="2" opacity=".85"/>
+                            <path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                          </svg>
+                          <div>
+                            <b>Email</b>
+                              <span>info@weilsan.site</span>
+                            
+                          </div>
+                        </li>
+                    </a>
+
+                    <li>
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 22s7-4.4 7-11a7 7 0 1 0-14 0c0 6.6 7 11 7 11Z" stroke="currentColor" stroke-width="2" opacity=".9"/>
+                        <path d="M12 11.2a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z" stroke="currentColor" stroke-width="2" opacity=".9"/>
+                      </svg>
+                      <div>
+                        <b>Service area</b>
+                        <span>Country-wide Kenya</span>
+                      </div>
+                    </li>
+                  </ul>
 
 
-<!-- WHY CHOOSE US -->
-<section>
-    <h2>Why Choose Welisan Tech?</h2>
-    <ul>
-        <li>✔ Affordable pricing</li>
-        <li>✔ Fast delivery</li>
-        <li>✔ Experienced technicians</li>
-        <li>✔ High-quality and reliable installations</li>
-    </ul>
-</section>
+              <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px;">
+                <button class="btn secondary" type="button" data-open-quote="General Inquiry">Open quote form</button>
+                <a class="btn ghost" href="#services">View services</a>
+              </div>
+            </div>
+          </div>
 
+          <div class="contactCard reveal" aria-label="Contact form">
+              <form id="contactForm" action="https://formsubmit.co/info@welisan.site" method="POST" novalidate>
+                <div class="fieldRow">
+                  <label>
+                    Full name
+                    <input name="name" type="text" placeholder="Your name" autocomplete="name" required />
+                  </label>
+                  <label>
+                    Phone / WhatsApp
+                    <input name="phone" type="tel" placeholder="+000 000 0000" autocomplete="tel" required />
+                  </label>
+                </div>
 
-<!-- CTA -->
-<div class="cta">
-    <h2>Ready to Get Started?</h2>
-    <p>Call or WhatsApp us now for a free consultation!</p>
-    <a href="https://wa.me/254111966638">Chat on WhatsApp</a>
-</div>
+                <div class="fieldRow">
+                  <label>
+                    Email (optional)
+                    <input name="email" type="email" placeholder="you@example.com" autocomplete="email" />
+                  </label>
+                  <label>
+                    Service
+                    <select name="service" required>
+                      <option value="" selected>Select a service</option>
+                      <option value="CCTV Installation">CCTV Installation</option>
+                      <option value="Web Design & Development">Web Design & Development</option>
+                      <option value="Car Tracker Installation">Car Tracker Installation</option>
+                      <option value="Bundle Package">Bundle Package</option>
+                      <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                  </label>
+                </div>
 
+                <label>
+                  Project details
+                  <textarea name="message" placeholder="Tell us what you need (e.g., number of cameras/vehicles, website pages, location, timeline)..." required></textarea>
+                </label>
 
-<!-- CONTACT -->
-<section>
-    <h2>Contact Us</h2>
-    <p><strong>Phone/WhatsApp:</strong> 0111966638</p>
-    <p><strong>Email:</strong> Coming soon → info@welisan.site</p>
+                <div class="formActions">
+                  <button class="btn" type="submit">
+                    Send Request
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M22 2l-7 20-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="helper">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor" stroke-width="2" opacity=".75"/>
+                      <path d="M8.5 11a3.5 3.5 0 1 1 5.8 2.6c-.9.7-1.3 1.1-1.3 2.4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+                      <path d="M12 18h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    We’ll confirm requirements and send a quote.
+                  </div>
+                </div>
+              </form>
 
-    <!-- Image description: Support agent on a headset offering customer service. -->
-    <img src="https://picsum.photos/1200/400?random=5" alt="Contact Image" style="width:100%; border-radius:10px; margin-top:20px;">
-</section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer aria-label="Footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div class="logo" aria-hidden="true" style="width:36px; height:36px; border-radius:14px;"></div>
+            <div>
+              <div style="font-weight:900; letter-spacing:-.02em;">Welisan Technologies</div>
+              <div style="color:var(--muted); font-size:12.5px; margin-top:2px;">CCTV • Web Design & Development • Car Trackers</div>
+            </div>
+          </div>
+          <div class="fine">
+            © <span id="year"></span> Welisan Technologies. All rights reserved.<br/>
+            top notch security solutions for your home and businesses
+          </div>
+        </div>
 
-<footer>
-    © 2025 Welisan Tech – All Rights Reserved.
-</footer>
+        <div>
+          <div class="footLinks" aria-label="Footer links">
+            <a href="#services">Services</a>
+            <a href="#why">Why Welisan</a>
+            <a href="#work">Work</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="fine" style="text-align:right;">
+            Built for performance, accessibility, and mobile-first UX.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="toTop" id="toTop" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <div class="toastRow">
+      <p id="toastMsg">Saved.</p>
+      <button type="button" id="toastClose">Close</button>
+    </div>
+  </div>
+
+  <!-- Quote Modal -->
+  <div class="modalOverlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Request a Quote">
+      <div class="modalHeader">
+        <b>Request a Quote</b>
+        <button class="closeBtn" type="button" id="modalClose" aria-label="Close quote form">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modalBody">
+        <div class="modalInfo">
+          <div class="kicker">What happens next</div>
+          <h3 style="margin:8px 0 0; letter-spacing:-.02em;">We reply with a clear scope and price.</h3>
+          <p>
+            Provide the basics (location, quantity, and any preferences). If needed, we’ll schedule a site visit or a quick call to confirm details.
+          </p>
+          <div class="chips" aria-label="Common add-ons">
+            <span class="chip">Remote viewing</span>
+            <span class="chip">Storage retention</span>
+            <span class="chip">Website SEO basics</span>
+            <span class="chip">WhatsApp integration</span>
+            <span class="chip">Geo-fence alerts</span>
+          </div>
+        </div>
+
+        <div class="modalForm" aria-label="Quote form">
+          <form id="quoteForm" action="https://formsubmit.co/info@welisan.site" method="POST" novalidate>
+            <div class="fieldRow">
+              <label>
+                Name
+                <input name="q_name" type="text" placeholder="Your name" autocomplete="name" required />
+              </label>
+              <label>
+                Phone / WhatsApp
+                <input name="q_phone" type="tel" placeholder="+000 000 0000" autocomplete="tel" required />
+              </label>
+            </div>
+
+            <label>
+              Service
+              <select name="q_service" id="q_service" required>
+                <option value="" selected>Select a service</option>
+                <option value="CCTV Installation">CCTV Installation</option>
+                <option value="Web Design & Development">Web Design & Development</option>
+                <option value="Car Tracker Installation">Car Tracker Installation</option>
+                <option value="Bundle Package">Bundle Package</option>
+                <option value="General Inquiry">General Inquiry</option>
+              </select>
+            </label>
+
+            <label>
+              Location (optional)
+              <input name="q_location" type="text" placeholder="City/Area" autocomplete="address-level2" />
+            </label>
+
+            <label>
+              Details
+              <textarea name="q_details" id="q_details" placeholder="Describe your project (quantity, timeline, preferences)..." required></textarea>
+            </label>
+
+            <div class="formActions">
+              <button class="btn" type="submit">Submit Quote Request</button>
+              <button class="btn secondary" type="button" id="copySummary">Copy Summary</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
-
