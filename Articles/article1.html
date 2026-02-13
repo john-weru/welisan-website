@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔹 CHANGE THESE PER ARTICLE -->
+    <title>Article Title Here | Welisan</title>
+    <meta name="description" content="Short SEO-friendly description of this article (150–160 characters).">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Article Title Here | Welisan">
+    <meta property="og:description" content="Short SEO-friendly description of this article.">
+    <meta property="og:image" content="https://welisan.site/welisan-logo-full.png">
+    <meta property="og:url" content="https://welisan.site/articles/article-slug.html">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Article Title Here | Welisan">
+    <meta name="twitter:description" content="Short SEO-friendly description of this article.">
+    <meta name="twitter:image" content="https://welisan.site/welisan-logo-full.png">
+
+    <!-- Styles (go up one level) -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../welisan-icon.png" type="image/png">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../welisan-wordmark.png" alt="Welisan logo" style="height:40px;">
+            </a>
+
+            <div class="hamburger" id="hamburger">&#9776;</div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../articles.html">Blog</a></li>
+                <li><a href="../contact.html#contactForm">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ARTICLE HEADER -->
+    <header class="section bg-light">
+        <div class="container" style="max-width:800px;">
+            <h1>Article Title Goes Here</h1>
+
+            <p style="color:#666;">
+                By <strong>Welisan</strong> • <time datetime="2026-02-01">February 1, 2026</time>
+            </p>
+
+            <p class="lead">
+                This is the article introduction. It should hook the reader and clearly state what the article is about.
+            </p>
+        </div>
+    </header>
+
+    <!-- ARTICLE CONTENT -->
+    <main class="section">
+        <div class="container" style="max-width:800px;">
+
+            <h2>Section Heading</h2>
+            <p>
+                Write your paragraph content here. Keep sentences clear, helpful, and SEO-focused.
+            </p>
+
+            <h3>Subheading</h3>
+            <p>
+                More detailed explanation goes here. You can add links, examples, or bullet points.
+            </p>
+
+            <ul>
+                <li>Key point one</li>
+                <li>Key point two</li>
+                <li>Key point three</li>
+            </ul>
+
+            <h2>Another Main Section</h2>
+            <p>
+                Continue writing your article content naturally. This area supports long-form SEO articles.
+            </p>
+
+            <!-- OPTIONAL IMAGE -->
+            <img src="../images/example-image.png" alt="Descriptive alt text" style="width:100%;border-radius:12px;margin:2rem 0;">
+
+            <h2>Conclusion</h2>
+            <p>
+                Summarize the article and guide the reader toward a next step.
+            </p>
+
+        </div>
+    </main>
+
+    <!-- CTA -->
+    <section class="section bg-cyan text-center">
+        <div class="container">
+            <h2>Read More of Our Amaizing Articles</h2>
+            <a href="../contact.html#contactForm" class="btn btn-secondary">
+                More knowledge
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-cyan text-center">
+        <div class="container">
+            <h2>Need a Website That Actually Brings Customers?</h2>
+            <p style="color:white;">
+                We build affordable, SEO-optimized websites for small businesses.
+            </p>
+            <a href="../contact.html#contactForm" class="btn btn-secondary">
+                Get a Free Website Review
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="../welisan-wordmark-tagline.png" alt="Welisan" style="max-width:180px;">
+                    <p>Helping small businesses thrive online with affordable web design and SEO.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../portfolio.html">Portfolio</a></li>
+                        <li><a href="../contact.html#contactForm">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 Welisan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
