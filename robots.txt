@@ -1,0 +1,13 @@
+# Highly optimized robots.txt for Welisan.site
+# Generated on Feb 14, 2026
+
+User-agent: *
+Allow: /
+
+# Block access to private system folders (Standard practice)
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /private/
+
+# Explicitly link to your sitemap
+Sitemap: https://welisan.site/sitemap.xml
