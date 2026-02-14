@@ -164,7 +164,7 @@ img {
     background-color: #00e1ff;
 }
 
-. {
+.hamburger {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
@@ -439,7 +439,7 @@ footer {
         width: 200px;
         padding: 20px;
         transition: right 0.3s ease;
-        display:none;
+        display: none;
         box-shadow: -2px 5px 5px rgba(0,0,0,0.1);
     }
 
@@ -797,6 +797,13 @@ p a:hover {
     margin-top: 15px;
 }
 
+.highlight {
+    background: rgba(0, 122, 138, 0.2);
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
 .contact-card {
     box-shadow: var(--shadow);
     border: 1px solid #e0e0e0;
@@ -863,6 +870,5 @@ p a:hover {
     font-size: 2rem;
     cursor: pointer;
 }
-
 
 
